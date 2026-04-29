@@ -132,6 +132,45 @@ max-width:1400px;
 margin:auto;
 }
 
+/* SECTION HEADER */
+
+.section-header{
+text-align:center;
+margin-bottom:40px;
+}
+
+.section-headline{
+font-size:clamp(26px,5vw,48px);
+font-weight:700;
+color:#ffffff;
+margin:0 0 14px;
+letter-spacing:-0.5px;
+}
+
+.section-desc{
+font-size:clamp(15px,2.2vw,18px);
+color:#9baaa0;
+line-height:1.65;
+max-width:680px;
+margin:0 auto;
+}
+
+/* GOLDEN DIVIDER */
+
+.golden-divider{
+max-width:1400px;
+margin:0 auto;
+padding:0 24px;
+}
+
+.golden-divider-inner{
+height:2px;
+background:linear-gradient(90deg,transparent,#f7c96d55,#f7c96d,#f7c96d55,transparent);
+border-radius:2px;
+}
+
+/* GRID */
+
 .project-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
@@ -171,7 +210,7 @@ border:none;
 border-radius:12px;
 }
 
-/* TITLE */
+/* CARD TEXT */
 
 .card h3{
 margin:14px 0 6px;
@@ -210,9 +249,7 @@ font-size:13px;
 
 @media(max-width:650px){
 .project-grid{grid-template-columns:1fr;}
-
 .hero{min-height:360px;padding-bottom:120px;}
-
 .btn{
 right:50%;
 transform:translateX(50%);
@@ -220,16 +257,14 @@ bottom:30px;
 width:calc(100% - 48px);
 text-align:center;
 }
-
-.scroll-down{
-bottom:80px;
-}
+.scroll-down{bottom:80px;}
 }
 
 </style>
 </head>
 <body>
 
+<!-- HERO -->
 <div class="hero">
   <h1>Scripter Jaat</h1>
   <p>Hi, I am Aditya Poonia(Scripter_Jaat)</p>
@@ -239,11 +274,13 @@ bottom:80px;
   </a>
 </div>
 
+<!-- ABOUT -->
 <div class="about">
   I'm a full stack scripter with about 2 years of experience.
   Most of my work revolves around gameplay systems like movement, inventories, weapons, quests and other modular systems used in Roblox games.
 </div>
 
+<!-- COUPON -->
 <div class="coupon-section">
   <div class="coupon-title">🎟 Free Fix Coupon 🎟</div>
   <div class="coupon-divider"></div>
@@ -255,7 +292,11 @@ bottom:80px;
   </div>
 </div>
 
+<!-- SPOTLIGHTS -->
 <div class="projects">
+  <div class="section-header">
+    <div class="section-headline">Spotlights</div>
+  </div>
   <div class="project-grid">
 
     <div class="card">
@@ -270,6 +311,22 @@ bottom:80px;
         <div class="tag">UI</div>
       </div>
     </div>
+
+    <div class="card">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/EKdwFgQ4IvY?autoplay=1&mute=1&loop=1&playlist=EKdwFgQ4IvY" allowfullscreen allow="autoplay"></iframe></div>
+      <h3>Over The Shoulder Guns</h3>
+      <p>OTS Guns, made for story and roleplay games, Military style weapons.</p>
+      <div class="tags">
+        <div class="tag">OTS</div>
+	<div class="tag">Modular</div>
+        <div class="tag">Guns</div>
+        <div class="tag">Realistic</div>
+	<div class="tag">Shell Ejection</div>
+	<div class="tag">Gore</div>
+      </div>
+    </div>
+
 
     <div class="card">
       <div class="video-wrap">
@@ -348,6 +405,86 @@ bottom:80px;
         <div class="tag">Inventory</div>
       </div>
     </div>
+
+  </div>
+</div>
+
+<!-- GOLDEN DIVIDER -->
+<div class="golden-divider">
+  <div class="golden-divider-inner"></div>
+</div>
+
+<!-- SECOND SECTION -->
+<div class="projects">
+  <div class="section-header">
+    <div class="section-headline">Open Source Mastery</div>
+    <p class="section-desc">
+      These are Open-Source system/modules that I have mastered.<br>
+      I can customize these modules and systems and apply in your game.<br>
+      Disclaimer: I do NOT take credit for making these system, and give full respect/credit to the respective creators.
+    </p>
+  </div>
+  <div class="project-grid">
+
+    <div class="card">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/aebNCxuoJhw?autoplay=1&mute=1&loop=1&playlist=aebNCxuoJhw" allowfullscreen allow="autoplay"></iframe>
+  </div>
+  <h3>Physics Based Car</h3>
+  <p>A simple but satisfying physics-driven car system. Feels weighty, responsive, and actually fun to drive around.</p>
+  <div class="tags">
+    <div class="tag">Physics</div>
+    <div class="tag">Vehicles</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/-nRd-YsYX-g?autoplay=1&mute=1&loop=1&playlist=-nRd-YsYX-g" allowfullscreen allow="autoplay"></iframe>
+  </div>
+  <h3>EzVisuals UI</h3>
+  <p>A clean UI setup that just looks good without trying too hard. Smooth animations and a nice overall vibe.</p>
+  <div class="tags">
+    <div class="tag">UI</div>
+    <div class="tag">Visuals</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/u4egwAyQH_U?autoplay=1&mute=1&loop=1&playlist=u4egwAyQH_U" allowfullscreen allow="autoplay"></iframe>
+  </div>
+  <h3>Planet System</h3>
+  <p>A cool little planetary setup with orbiting bodies. Not super complex, but it gives a nice space feel.</p>
+  <div class="tags">
+    <div class="tag">Space</div>
+    <div class="tag">Simulation</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/oJkO0cbR35A?autoplay=1&mute=1&loop=1&playlist=oJkO0cbR35A" allowfullscreen allow="autoplay"></iframe>
+  </div>
+  <h3>Realistic Bloom</h3>
+  <p>Lighting upgrade that instantly makes everything look better. Subtle glow, but it adds a lot.</p>
+  <div class="tags">
+    <div class="tag">Graphics</div>
+    <div class="tag">Lighting</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/51RGKM_WiKk?autoplay=1&mute=1&loop=1&playlist=51RGKM_WiKk" allowfullscreen allow="autoplay"></iframe>
+  </div>
+  <h3>Roblox FPS System</h3>
+  <p>A solid FPS setup with smooth shooting and decent mechanics. Feels pretty close to actual shooters.</p>
+  <div class="tags">
+    <div class="tag">FPS</div>
+    <div class="tag">Combat</div>
+  </div>
+</div>
 
   </div>
 </div>
